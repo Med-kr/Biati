@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    top: -5px;
+    left: -5px;
+    width: 70px;
+    position: absolute;
+}
+body{
+    background-image: url(photos/background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+nav{
+    margin-top: 0;
+    display: flex;
+    height: 60px;
+    background-color: white;
+    justify-content: center;
+
+    a{
+        all: unset;
+        cursor: pointer;
+    }
+    
+    .nav{
+        display: flex;
+        gap: 70px;
+        align-items: center;
+    }
+}
+.menu{
+    position: absolute;
+    height: 60px;
+    right: 15px;
+}
