@@ -1,9 +1,11 @@
 *{
+    font-family: 'Rambla', sans-serif;
     padding: 0;
     margin: 0;
 }
+    
 .logo{
-    top: -5px;
+    top: 5px;
     left: -5px;
     width: 70px;
     position: absolute;
@@ -16,11 +18,9 @@ body{
 }
 nav{
     margin-top: 0;
-    display: flex;
-    height: 60px;
+    height: 75px;
     background-color: white;
-    justify-content: center;
-
+    align-content: center;
     a{
         all: unset;
         cursor: pointer;
@@ -28,12 +28,44 @@ nav{
     
     .nav{
         display: flex;
-        gap: 70px;
-        align-items: center;
+        gap: 20px;
+        justify-content: center;
     }
 }
 .menu{
     position: absolute;
     height: 60px;
     right: 15px;
+}
+
+.rbi3a{
+    z-index: 0;
+    margin-left: 90px;
+    height: 140px;
+    top: 90px;
+    z-index: 0;
+}
+
+h1{
+    top: 90px;
+    left: 200px;
+    text-align: center;
+    font-family: 'Rakkas', cursive;
+    color: white;
+    z-index: 1;
+}
+
+.un-maroc{
+    max-width: 200px;
+    top: 130px;
+    left: 175px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+.bola{
+    float: calc(100%,50px);
+}
+.decouvrez{
+    max-width: 300px;
 }
