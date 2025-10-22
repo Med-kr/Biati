@@ -1,3 +1,17 @@
+/*-------------------- root --------------------*/
+:root {
+    --font-main :"Rambla", sans-serif;
+    --font-logo :"Rakkas", serif;
+    --premiere-color :#3D7730;
+    --deuxieme-color :#8FA31E
+    --troisieme-color:#C6d870;
+    ---texte-N-color:#000000 ;
+    --texte-B-color: white;
+    --backgrand:url(photos/background.png);
+}
+
+
+
 *{
     font-family: 'Rambla', sans-serif;
     padding: 0;
