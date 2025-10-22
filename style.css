@@ -57,7 +57,7 @@ nav{
     margin-left: 90px;
     height: 140px;
     top: 90px;
-    z-index: 0;
+    margin-top: 90px;
 }
 
 h1{
@@ -82,4 +82,7 @@ h1{
 }
 .decouvrez{
     max-width: 300px;
+}
+.titrepage{
+    background-color: ;
 }
