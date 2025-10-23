@@ -1,0 +1,121 @@
+.bola{
+    text-align: center;
+}
+
+.carts-temoignages{
+    display: grid;
+    gap: 20px;
+}
+
+.temoignage-parent{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.temoignage{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+    background-color: rgba(255, 255, 255, 0.316) ;
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+    img{
+        border-radius: 50%;
+        width: 50px;
+    }
+    p{
+        max-height: 80px;
+    }
+    .name-photo{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .name{
+        font-size: 19px;
+    }
+}
+.Concept img{
+    width: 150px;
+}
+
+.cart-valeur{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.valeur{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+    background-color: #4c504836;
+    padding: 30px;
+    align-content: center;
+    justify-items: center;
+    display: grid;
+    gap: 20px;
+    border: solid;
+    border-radius: 15px;
+    width: 240px;
+    height: 200px;
+    h3{
+        font-size: xx-large;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+
+.h2-sections{
+    display: flex;
+    justify-content: center;
+}
+.h2-sections > h2{
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #0000005e;
+}
+
+.p-kolchi{
+    justify-items: center;
+    p{
+        margin: 20px;
+        max-width: 350px;
+    }
+}
+
+section{
+    margin: 20px 0;
+}
+
+.cart-explorer{
+    text-align: center;
+    padding: 30px;
+
+    .explorer{
+    all: unset;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #00000035;
+    border-radius: 15px;
+}
+}
+
+.concept{
+    display: grid;
+    gap: 40px;
+    justify-items: center;
+    img{
+        height: 12rem;
+        width: 60%;
+        border-radius: 30px;
+    }
+}
+
+@media (min-width:800px){
+    .parent-bola-p-expore{
+        display: flex;
+    }
+}
