@@ -114,6 +114,7 @@ nav{
     display: grid;
     gap: 20px;
 }
+<<<<<<< HEAD
 
 .temoignage-parent{
     display: flex;
@@ -236,3 +237,81 @@ section{
     }
 }
 
+=======
+.titrepage{
+    background-color: var(--premiere-color);
+    color:var(--texte-B-color);
+    
+
+}
+.titre{
+    background: var(--premiere-color);
+    border-radius: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tous {
+    background: #d9d9d960;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.pict {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    padding-bottom: 10px;
+}
+
+.pict img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pict h2 {
+    font-size: 20px;
+    margin: 10px 10px 5px;
+    color: #0c6933;
+}
+
+.pict p {
+    padding: 0 15px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    color: var(---texte-N-color);
+    background-color: var(--texte-B-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .tous {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .tous {
+        grid-template-columns: 1fr;
+    }
+    .pict img {
+        height: 180px;
+    }
+}
+>>>>>>> 65ba774 (projet)
