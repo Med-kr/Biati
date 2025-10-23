@@ -1,4 +1,6 @@
 /*-------------------- root --------------------*/
+
+/*all*/
 :root {
     --font-main :"Rambla", sans-serif;
     --font-logo :"Rakkas", serif;
@@ -17,8 +19,6 @@
     margin: 0;
 }
 
-
-
 footer{
     height: 60px;
     align-content: center;
@@ -31,11 +31,13 @@ footer{
 }
     
 .logo{
-    top: 5px;
-    left: -5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+    background-color: #ffffff;
+    border-radius: 20px;
     width: 70px;
     position: absolute;
 }
+
 body{
     background-image: url(photos/background.png);
     background-repeat: no-repeat;
@@ -45,8 +47,12 @@ body{
 nav{
     margin-top: 0;
     height: 75px;
-    background-color: white;
+    background-color: #7dde6741;
     align-content: center;
+    justify-items: center;
+    border-radius: 40px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
     a{
         all: unset;
         cursor: pointer;
@@ -55,7 +61,8 @@ nav{
     
     .nav{
         display: flex;
-        gap: 20px;
+        gap: 15px;
+        width: 21rem;
         justify-content: center;
     }
 }
@@ -65,35 +72,43 @@ nav{
     right: 15px;
 }
 
-.rbi3a{
-    z-index: 0;
-    margin-left: 90px;
-    height: 140px;
-    top: 90px;
-    margin-top: 90px;
+.parent-biati-logo{
+    display: flex;
+    justify-content: center;
 }
 
-h1{
-    top: 90px;
-    left: 200px;
-    text-align: center;
+.biati-logo{
+    position: absolute;
     font-family: 'Rakkas', cursive;
-    color: white;
-    z-index: 1;
+}
+
+.parent-un-maroc{
+    display: flex;
+    justify-content: center;
 }
 
 .un-maroc{
+    position: absolute;
     max-width: 200px;
-    top: 130px;
-    left: 175px;
     text-align: center;
-    color: white;
-    z-index: 2;
+    top: 10rem;
 }
+
+.parent-rbi3a{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.rbi3a{
+    height: 6.5rem;
+}
+
+/*index*/
+
 .bola{
     text-align: center;
 }
-
 
 .carts-temoignages{
     display: grid;
@@ -206,3 +221,18 @@ section{
         border-radius: 30px;
     }
 }
+
+/*actualite*/
+
+.actu-cart{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+    background-color: #4c504836 ;
+    justify-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    >p{
+        text-align: center;
+    }
+}
+
