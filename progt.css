@@ -1,0 +1,153 @@
+:root {
+    --font-main :"Rambla", sans-serif;
+    --font-logo :"Rakkas", serif;
+    --premiere-color :#3D7730;
+    --deuxieme-color :#8FA31E;
+    --troisieme-color:#C6d870;
+    ---texte-N-color:#000000 ;
+    --texte-B-color: white;
+    --backgrand:url(photos/background.png);
+    --nabta-backgrand:url(photos/rbi3a.png);
+}
+
+*{
+    color: white;
+    font-family: 'Rambla', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 70px;
+    position: absolute;
+}
+
+body{
+    background-image: url(photos/background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+nav{
+    margin-top: 0;
+    height: 75px;
+    background-color: #7dde6741;
+    align-content: center;
+    justify-items: center;
+    border-radius: 40px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+    a{
+        all: unset;
+        cursor: pointer;
+        color: black;
+    }
+
+    .nav{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+.menu{
+    position: absolute;
+    height: 60px;
+    right: 15px;
+}
+
+.parent-biati-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.biati-logo{
+    position: absolute;
+    font-family: 'Rakkas', cursive;
+}
+
+.parent-un-maroc{
+    display: flex;
+    justify-content: center;
+}
+
+.un-maroc{
+    position: absolute;
+    max-width: 200px;
+    text-align: center;
+    top: 10rem;
+}
+
+.parent-rbi3a{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.rbi3a{
+    height: 6.5rem;
+}
+
+
+.titre{
+    background: var(--premiere-color);
+    border-radius: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tous {
+    background: #d9d9d960;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.pict {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    padding-bottom: 10px;
+}
+
+.pict img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pict h2 {
+    font-size: 20px;
+    margin: 10px 10px 5px;
+    color: #0c6933;
+}
+
+.pict p {
+    padding: 0 15px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+@media (max-width: 900px) {
+    .tous {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .tous {
+        grid-template-columns: 1fr;
+    }
+    .pict img {
+        height: 180px;
+    }
+}
