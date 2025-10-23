@@ -1,6 +1,3 @@
-/*-------------------- root --------------------*/
-
-/*all*/
 :root {
     --font-main :"Rambla", sans-serif;
     --font-logo :"Rakkas", serif;
@@ -34,7 +31,7 @@ body{
     background-size:cover;
     background-attachment: fixed;
 }
-nav{
+.nav{
     margin-top: 0;
     height: 75px;
     background-color: #7dde6741;
@@ -48,236 +45,13 @@ nav{
         cursor: pointer;
         color: black;
     }
-
-    .nav{
+}
+.nav{
         display: flex;
         gap: 15px;
         width: 21rem;
         justify-content: center;
-    }
-}
-.menu{
-    position: absolute;
-    height: 60px;
-    right: 15px;
-}
-
-.parent-biati-logo{
-    display: flex;
-    justify-content: center;
-}
-
-.biati-logo{
-    position: absolute;
-    font-family: 'Rakkas', cursive;
-}
-
-.parent-un-maroc{
-    display: flex;
-    justify-content: center;
-}
-
-.un-maroc{
-    position: absolute;
-    max-width: 200px;
-    text-align: center;
-    top: 10rem;
-}
-
-.parent-rbi3a{
-    display: grid;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.rbi3a{
-    height: 6.5rem;
-}
-
-/*index*/
-
-.bola{
-    text-align: center;
-}
-
-.carts-temoignages{
-    display: grid;
-    gap: 20px;
-}
-
-
-.temoignage-parent{
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-}
-.temoignage{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
-    background-color: rgba(255, 255, 255, 0.316) ;
-    width: 240px;
-    height: 200px;
-    border-radius: 10px;
-    padding: 30px;
-    display: grid;
-    gap: 20px;
-    img{
-        border-radius: 50%;
-        width: 50px;
-    }
-    p{
-        max-height: 80px;
-    }
-    .name-photo{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    .name{
-        font-size: 19px;
-    }
-}
-.Concept img{
-    width: 150px;
-}
-
-.cart-valeur{
-    display: grid;
-    justify-items: center;
-    gap: 20px;
-}
-
-.valeur{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
-    background-color: #4c504836;
-    padding: 30px;
-    align-content: center;
-    justify-items: center;
-    display: grid;
-    gap: 20px;
-    border: solid;
-    border-radius: 15px;
-    width: 240px;
-    height: 200px;
-    h3{
-        font-size: xx-large;
-    }
-    p{
-        font-size: 25px;
-    }
-}
-
-.h2-sections{
-    display: flex;
-    justify-content: center;
-}
-.h2-sections > h2{
-    margin: 10px;
-    padding: 10px 15px;
-    border-radius: 15px;
-    background-color: #0000005e;
-}
-
-.p-kolchi{
-    justify-items: center;
-    p{
-        margin: 20px;
-        max-width: 350px;
-    }
-}
-
-section{
-    margin: 20px 0;
-}
-
-.cart-explorer{
-    text-align: center;
-    padding: 30px;
-
-    .explorer{
-    all: unset;
-    cursor: pointer;
-    padding: 15px;
-    background-color: #00000035;
-    border-radius: 15px;
-}
-}
-
-.concept{
-    display: grid;
-    gap: 40px;
-    justify-items: center;
-    img{
-        height: 12rem;
-        width: 60%;
-        border-radius: 30px;
-    }
-}
-
-/*actualite*/
-
-.actu-cart{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
-    background-color: #4c504836 ;
-    justify-items: center;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 10px;
-    >p{
-        text-align: center;
-    }
-}
-
-
-.titrepage{
-    background-color: var(--premiere-color);
-    color:var(--texte-B-color);
     
-
-}
-.titre{
-    background: var(--premiere-color);
-    border-radius: 20px;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.tous {
-    background: #d9d9d960;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.pict {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s;
-    padding-bottom: 10px;
-}
-
-.pict img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.pict h2 {
-    font-size: 20px;
-    margin: 10px 10px 5px;
-    color: #0c6933;
-}
-
-.pict p {
-    padding: 0 15px 15px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #555;
 }
 .titre-edu {
     width: 100%;
@@ -331,6 +105,8 @@ h1, h2, h3 {
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 15px;
+    margin-top: 35px;
+    text-align: center;
 }
 .actu-edu-txt p {
     color: var(--texte-B-color);
@@ -369,7 +145,6 @@ h1, h2, h3 {
     margin-top: 20px;
     margin-left: 20px;
 }
-
 .row-media {
     display: flex;
     flex-wrap: wrap;
@@ -436,7 +211,7 @@ h1, h2, h3 {
 }
 
 
-footer{
+.footer{
     width: 100%;
     height: 100px;
     color: var(---texte-N-color);
@@ -445,19 +220,4 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width: 900px) {
-    .tous {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .tous {
-        grid-template-columns: 1fr;
-    }
-    .pict img {
-        height: 180px;
-    }
 }
