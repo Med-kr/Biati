@@ -10,6 +10,7 @@
     ---texte-N-color:#000000 ;
     --texte-B-color: white;
     --backgrand:url(photos/background.png);
+    --nabta-backgrand:url(photos/rbi3a.png);
 }
 
 *{
@@ -18,7 +19,9 @@
     padding: 0;
     margin: 0;
 }
-
+.parent-biati-logo{
+    background-image: var(--nabta-backgrand);
+}
 footer{
     height: 60px;
     align-content: center;
@@ -289,16 +292,7 @@ h1, h2, h3 {
     line-height: 1.5;
     color: #555;
 }
-footer{
-    width: 100%;
-    height: 100px;
-    color: var(---texte-N-color);
-    background-color: var(--texte-B-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 @media (max-width: 900px) {
     .tous {
