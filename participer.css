@@ -1,0 +1,481 @@
+
+/* -------------------- SECTION PARTICIPER -------------------- */
+.Participer {
+    text-align: center;
+    background-color: rgba(61, 119, 48, 0.7);
+    color: var(--B-color);
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    margin: 0 auto 20px;
+    transition: transform 0.3s;
+}
+
+.Participer:hover {
+    transform: scale(1.02);
+}
+
+.Participer h1 {
+    font-size: 28px;
+    font-family: var(--font-logo);
+}
+
+.Participer h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* -------------------- POURQUOI DEVENIR BÉNÉVOLE -------------------- */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+    color: var(--B-color);
+}
+
+.tous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 20px 40px;
+}
+
+/* ----------- Cartes de motivation ----------- */
+.Impact-positif,
+.Rencontres-enrichissantes,
+.Nouvelles-compétences {
+    background-color: rgba(61, 119, 48, 0.7);
+    color: var(--B-color);
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.Impact-positif img,
+.Rencontres-enrichissantes img,
+.Nouvelles-compétences img {
+    width: 40px;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.Impact-positif h2,
+.Rencontres-enrichissantes h2,
+.Nouvelles-compétences h2 {
+    color: var(--B-color);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.Impact-positif p,
+.Rencontres-enrichissantes p,
+.Nouvelles-compétences p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* -------------------- FORMULAIRE -------------------- */
+.Formulaire {
+    background-color: var(--B-color);
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.Formulaire h2 {
+    color: var(--premiere-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Formulaire label {
+    font-weight: 600;
+    color: var(--premiere-color);
+    font-size: 14px;
+}
+
+.Formulaire input,
+.Formulaire select,
+.Formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--troisieme-color);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.Formulaire textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.Formulaire button {
+    background-color: var(--premiere-color);
+    color: var(--B-color);
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Formulaire button:hover {
+    background-color: var(--deuxieme-color);
+}
+
+/* -------------------- TÉMOIGNAGES -------------------- */
+.Témoignages {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.Témoignages h2 {
+    background-color: var(--premiere-color);
+    color: var(--B-color);
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.témoignages1,
+.témoignages2,
+.témoignages3 {
+    background-color: rgba(255, 255, 255, 0.315);
+    color: var(--B-color);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 10px auto;
+    max-width: 320px;
+    transition: all 0.3s ease;
+}
+
+.Témoignages img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* -------------------- HOVER EFFECTS -------------------- */
+@media (min-width: 768px) {
+    .Participer:hover {
+        transform: scale(1.05);
+    }
+    
+    .Impact-positif:hover,
+    .Rencontres-enrichissantes:hover,
+    .Nouvelles-compétences:hover,
+    .Formulaire:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    
+    .témoignages1:hover,
+    .témoignages2:hover,
+    .témoignages3:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* -------------------- TABLET RESPONSIVE -------------------- */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .affichemenu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: auto;
+        min-width: 600px;
+        background: var(--premiere-color);
+        padding: 15px 20px;
+        border-radius: 15px;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+    
+    .close-btn {
+        order: 2;
+        margin: 0 0 0 auto;
+    }
+    
+    .affichemenu-links {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        order: 1;
+    }
+    
+    .affichemenu a {
+        font-size: 16px;
+        padding: 8px 12px;
+        white-space: nowrap;
+    }
+    
+    .marque {
+        height: 400px;
+    }
+    
+    .marque .texte h1 {
+        font-size: 60px;
+    }
+    
+    .marque .texte h2 {
+        font-size: 22px;
+    }
+    
+    .Participer {
+        width: 80%;
+        padding: 30px;
+    }
+    
+    .Participer h1 {
+        font-size: 32px;
+    }
+    
+    .Participer h3 {
+        font-size: 16px;
+    }
+    
+    .tous {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 30px;
+        padding: 0 40px 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: start;
+    }
+    
+    .Impact-positif,
+    .Rencontres-enrichissantes,
+    .Nouvelles-compétences {
+        max-width: 100%;
+        height: 220px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .Impact-positif {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .Rencontres-enrichissantes {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .Nouvelles-compétences {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .Formulaire {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        max-width: 100%;
+        height: 100%;
+        min-height: 690px;
+        padding: 25px;
+    }
+    
+    .Témoignages {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .Témoignages h2 {
+        grid-column: 1 / span 3;
+        margin-bottom: 0;
+    }
+    
+    .témoignages1,
+    .témoignages2,
+    .témoignages3 {
+        max-width: 100%;
+        margin: 0;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+/* -------------------- DESKTOP RESPONSIVE -------------------- */
+@media (min-width: 1024px) {
+    .affichemenu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: auto;
+        min-width: 650px;
+        background: var(--premiere-color);
+        padding: 20px 30px;
+        border-radius: 15px;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+    
+    .close-btn {
+        order: 2;
+        margin: 0 0 0 auto;
+    }
+    
+    .affichemenu-links {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 25px;
+        order: 1;
+    }
+    
+    .affichemenu a {
+        font-size: 17px;
+        padding: 10px 16px;
+        white-space: nowrap;
+    }
+    
+    .marque {
+        height: 500px;
+    }
+    
+    .marque .texte h1 {
+        font-size: 72px;
+    }
+    
+    .marque .texte h2 {
+        font-size: 24px;
+    }
+    
+    .Participer {
+        width: 70%;
+        padding: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .Participer h1 {
+        font-size: 36px;
+    }
+    
+    .Participer h3 {
+        font-size: 18px;
+    }
+    
+    .tous {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 40px;
+        padding: 0 60px 60px;
+        max-width: 1400px;
+        margin: 0 auto;
+        align-items: start;
+    }
+    
+    .Impact-positif,
+    .Rencontres-enrichissantes,
+    .Nouvelles-compétences {
+        max-width: 100%;
+        padding: 30px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .Impact-positif {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .Rencontres-enrichissantes {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .Nouvelles-compétences {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .Formulaire {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        max-width: 100%;
+        height: 100%;
+        min-height: 810px;
+        padding: 30px;
+    }
+    
+    .Formulaire textarea {
+        flex-grow: 1;
+        min-height: 150px;
+    }
+    
+    .Témoignages {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        max-width: 100%;
+        margin: 0;
+        padding-top: 20px;
+    }
+    
+    .Témoignages h2 {
+        grid-column: 1 / span 3;
+        font-size: 28px;
+        margin-bottom: 0;
+        padding: 12px 30px;
+    }
+    
+    .témoignages1,
+    .témoignages2,
+    .témoignages3 {
+        max-width: 100%;
+        margin: 0;
+        padding: 25px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .Témoignages img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    footer {
+        padding: 25px;
+        font-size: 16px;
+    }
+}
