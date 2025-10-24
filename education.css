@@ -99,12 +99,12 @@
     justify-content: center;
     padding: 0px 20px 50px;
     margin: 20px;
+    gap: 150px;
 }
 .cadre-media {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 400px;
 }
 .cadre-media img {
     width: 250px;
