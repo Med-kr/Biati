@@ -9,33 +9,44 @@
     grid-template-columns: repeat(1 ,1fr);
 }
 
+
 .temoignage{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
     background-color: rgba(255, 255, 255, 0.316) ;
     width: 240px;
-    height: 200px;
+    height: 300px;
     border-radius: 10px;
     padding: 30px;
     display: grid;
     gap: 20px;
+    transition-duration: 0.5s;
     img{
         border-radius: 50%;
         width: 50px;
     }
-    >.name-photo{
+    .name-photo{
         padding-left: 10px;
         border-radius: 30px;
         background-color: #0000005e;
-    }
-    .name-photo{
         display: flex;
         align-items: center;
         gap: 20px;
+        transition-duration: 0.5s;
     }
     .name{
         font-size: 19px;
     }
 }
+
+.name-photo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+.temoignage:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
 .Concept img{
     width: 150px;
 }
@@ -58,13 +69,19 @@
     border: solid;
     border-radius: 15px;
     width: 240px;
-    height: 200px;
+    height: 300px;
+    transition-duration: 0.5s;
     h3{
         font-size: xx-large;
     }
     p{
         font-size: 21px;
     }
+}
+
+.valeur:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
 }
 
 .h2-sections{
@@ -104,7 +121,7 @@ section{
 }
 
 .parent-bola-p-expore{
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .concept{
@@ -116,7 +133,13 @@ section{
         height: 12rem;
         width: 290px;
         border-radius: 30px;
+        transition-duration: 0.5s;
     }
+}
+
+.concept img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
 }
 
 @media (min-width:700px){
