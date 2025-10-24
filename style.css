@@ -25,6 +25,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     line-height: 1.6;
+    color: var(--B-color);
 }
 
 /* -------------------- HEADER -------------------- */
@@ -202,4 +203,37 @@ footer {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.4;
+}
+@media (min-width: 1024px) {
+    .affichemenu {
+        position: absolute;
+        top: -9px;
+        right: 50px;
+        width: auto;
+        min-width: 650px;
+        background: var(--premiere-color);
+        padding: 10px;
+        border-radius: 15px;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .close-btn {
+        order: 2;
+        margin: 0 0 0 auto;
+    }
+    
+    .affichemenu-links {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 25px;
+        order: 1;
+    }
+    
+    .affichemenu a {
+        font-size: 17px;
+        padding: 10px 16px;
+        white-space: nowrap;
+    }
 }

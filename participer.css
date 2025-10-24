@@ -330,38 +330,7 @@ h2 {
 
 /* -------------------- DESKTOP RESPONSIVE -------------------- */
 @media (min-width: 1024px) {
-    .affichemenu {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: auto;
-        min-width: 650px;
-        background: var(--premiere-color);
-        padding: 20px 30px;
-        border-radius: 15px;
-        flex-direction: row;
-        align-items: center;
-        gap: 0;
-    }
-    
-    .close-btn {
-        order: 2;
-        margin: 0 0 0 auto;
-    }
-    
-    .affichemenu-links {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 25px;
-        order: 1;
-    }
-    
-    .affichemenu a {
-        font-size: 17px;
-        padding: 10px 16px;
-        white-space: nowrap;
-    }
-    
+
     .marque {
         height: 500px;
     }
