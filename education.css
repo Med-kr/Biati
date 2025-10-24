@@ -164,9 +164,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    text-decoration: none;
-}
-<<<<<<< HEAD:styleedu.css
+    text-decoration: none;}
 
 
 /* -------------------- TABLET RESPONSIVE -------------------- */
@@ -350,7 +348,5 @@
         height: 45px;
         font-size: 1.1rem;
         border-radius: 15px;
+        }
     }
-}
-=======
->>>>>>> 7e24c55cfacb1292a202ca08353ec6e0d8db3320:education.css
