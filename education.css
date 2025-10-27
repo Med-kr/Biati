@@ -51,8 +51,8 @@
     font-family: var(--font-main);
     font-weight: bold;
     font-size: 2rem;
-    margin-bottom: 15px;
-    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     text-align: center;
 }
 .actu-edu-txt p {
@@ -77,7 +77,6 @@
     justify-content: space-between;
     text-align: center;
     width: 350px;
-    height: 200px;
     color: var(--texte-B-color);
     border-radius: 10px;
     padding: 0px 20px 50px;
@@ -186,7 +185,6 @@
         flex-direction: column;
         align-items: center;
         width: 85%;
-        height: auto;
         padding: 20px;
     }
 
